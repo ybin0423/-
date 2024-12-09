@@ -36,3 +36,28 @@ Next Steps:
    -Batch_size 값 줄이기
    -추가 전처리
    
+## 백엔드 개념 
+
+1. Call by reference : 참조에 의한 호출, 메소드에 변수를 전달할 때 변수의 참조 전달, 메소드 내에서 변수를 수정하면 호출자의 변수도 변경 
+   - Call by value; 자바에서 메서드 호출 시 스프링이 따르는 방법.
+     값에 의한 호출 -> 메소드에 변수를 전달할 때 해당 변수 값이 복사되어 사용.
+     변수의 값이 변결되지 않음.
+2. Override vs Overload
+   - Override; 상위 클래스의 매서드를 재정의하는 것. (메서드의 이름, 파라미터의 개수, 타입)
+
+     ->Occurs bw superclass and subclass; have same signature(name & method arguments)
+   - Overload; 매서드의 이름은 같고 파라미터의 개수나 타입이 다른 함수를 정의 하는것
+
+     -> Occurs bw methods in same class; hav same name but diff parameters
+
+3. JVM (Java Virtual Machine) - 자바 프로그램을 실행하는 가상 머신
+4. Java가 컴파일되는 과정
+   
+   '''
+     1. 로드 (load)
+        클래스 파일을 가져와 JVM의 메모리에 로드하는 과정
+        자바 소스 코드 (.java) -> 자바 컴파일러가 이 소스 코드를 읽어 바이트 코드 (.class)로 컴파일 -> 클래스로더에게 전달 (클래스 로더는 필요한 클래스들을 링크해 jvm메모리에 업로드해 런타임 데이터를 구성)
+     2. 검증 - 자바 어
+     3. 검증
+  
+   '''
